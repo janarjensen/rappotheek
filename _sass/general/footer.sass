@@ -1,0 +1,90 @@
+footer
+  .scissorLine
+    border-top: 0.6vmin dotted $titleTextColor
+    margin: 8vh 0 7vh 0
+    .fa-scissors
+      font-size: 8vmin
+      color: $titleTextColor
+      margin-top: -4.5vmin
+      margin-left: 2vw
+      &:hover
+        cursor: pointer
+    .slideOutRight
+      margin-left: 100vw
+      transition: 3s
+    .overflowHiddenDiv
+      overflow: hidden
+      .egg
+        margin-top: -100%
+        overflow: hidden
+        border-bottom: 0.6vmin dotted $titleTextColor
+        padding: 0 0 4vmin 0
+        .fotoBackground
+          background-image: url("../img/backgrounds/hamburgerUitKyoto.jpg")
+          background-position: center center
+          background-size: contain
+          background-repeat: no-repeat
+          display: flex
+          justify-content: center
+          height: 80vmin
+          padding: 20px
+          h2
+            margin-top: auto
+            text-shadow: 1px 1px 1px $backgroundColor, 1px -1px 5px $backgroundColor, -1px 1px 5px $backgroundColor, 0px 0px 15px $backgroundColor
+      .eggTada
+        margin-top: 0%
+        transition: 2s
+        transition-delay: 2.6s
+
+  #footerNav
+    margin-bottom: 8vh
+    #nav1
+      a
+        margin: 0 10px
+        display: inline
+      a:nth-child(1)
+        font-size: 1.3em
+        border: 2px dotted $hoverColor
+        padding: 0.2em 0.6em
+        border-radius: 1.2em
+        box-shadow: 1px 1px 1px $titleTextColor, 1px -1px 5px $titleTextColor, -1px 1px 5px $titleTextColor, 0px 0px 15px $titleTextColor
+      a:nth-child(10n+2)
+        font-size: 2.3em
+      a:nth-child(10n+3)
+        font-size: 1.5em
+        font-family: 'Snowburst One', cursive
+        color: $hoverColor
+      a:nth-child(10n+4)
+        font-size: 2.1em
+        color: $backgroundColor
+        text-shadow: 1px 1px 1px $titleTextColor, 1px -1px 1px $titleTextColor, -1px 1px 1px $titleTextColor, 0px 0px 5px $titleTextColor
+      a:nth-child(10n+5)
+        font-size: 1.7em
+        color: $titleTextColor
+      a:nth-child(10n+6)
+        font-size: 2.1em
+      a:nth-child(10n+7)
+        font-size: 1.7em
+        font-weight: 500
+        background-color: $backgroundColor
+        padding: 0 0.4em
+      a:nth-child(10n+8)
+        font-size: 1.5em
+        color: $hoverColor
+        text-decoration: underline
+      a:nth-child(10n+9)
+        font-size: 2.2em
+        font-family: 'Snowburst One', cursive
+      a:nth-child(10n+10)
+        font-size: 2.1em
+        font-style: italic
+
+      a
+        &:hover
+          color: $hoverColor
+      a:nth-child(10n+3)
+        &:hover
+          text-decoration: underline
+      a:nth-child(10n+8)
+        &:hover
+          text-decoration: none

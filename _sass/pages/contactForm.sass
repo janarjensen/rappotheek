@@ -1,0 +1,62 @@
+#contactForm
+  h2
+    margin-top: 10vh
+    svg
+      height: 1em
+
+  .padding10px
+    padding-top: 0px
+    padding-bottom: 0px
+
+  .contactFormCard
+    padding: 0px 20px
+    display: flex
+    flex-direction: column
+    .nameEmail, .message
+      float: left
+
+    textarea, input
+      width: 100%
+      box-sizing: border-box
+      border: 2px solid $hoverColor
+      background-color: $hoverColor
+      margin: 10px 0
+      color: white
+
+    textarea
+      height: 160px
+      padding: 9px 10px
+      resize: vertical
+      &:focus
+        background-color: white
+        border: 2px solid $hoverColor
+        outline: 0
+        color: $textColor
+
+    input
+      height: 40px
+      padding: 0 10px
+      &:focus
+        background-color: white
+        border: 2px solid $hoverColor
+        outline: 0
+        color: $textColor
+    \::-webkit-input-placeholder
+      color: white
+    \:-moz-placeholder
+      color: white
+    \::-moz-placeholder
+      color: white
+    \:-ms-input-placeholder
+      color: white
+
+  .sendButtonContainer
+    [type="submit"]
+      background-color: $backgroundColor
+      border: 2px solid $hoverColor
+      color: $hoverColor
+      text-align: left
+      &:hover
+        background-color: $hoverColor
+        border: 2px solid $hoverColor
+        color: white

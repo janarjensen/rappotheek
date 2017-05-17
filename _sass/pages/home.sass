@@ -1,0 +1,108 @@
+#homeSection
+  .titleElement
+    background-position: center
+    background-size: cover
+    height: 50vh
+    display: flex
+    flex-direction: column
+    padding: 3vh 3vw
+
+    .titleText
+      height: 12vh
+      min-height: 100px
+      width: 100%
+      align-self: flex-end
+      margin-top: auto
+
+
+    svg
+      padding: 10px
+      -webkit-filter: drop-shadow(2px 2px 2px $titleTextColor) drop-shadow( 2px -2px 2px $titleTextColor) drop-shadow(-2px 2px 2px $titleTextColor) drop-shadow(0px 0px 12px $titleTextColor)
+      filter: drop-shadow(2px 2px 2px $titleTextColor) drop-shadow( 2px -2px 2px $titleTextColor) drop-shadow(-2px 2px 2px $titleTextColor) drop-shadow(0px 0px 12px $titleTextColor)
+      fill: $backgroundColor
+      #mizziSVG
+        @keyframes heartbeat
+          0%
+            transform: scale(1)
+          20%
+            transform: scale(1.05)
+          40%
+            transform: scale(1)
+          60%
+            transform: scale(1.05)
+          80%
+            transform: scale(1)
+          100%
+            transform: scale(1)
+        animation: heartbeat 1.2s infinite
+
+  .receptenInfo
+    margin-top: 10px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    width: 100%
+    #receptSuffice
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      // justify-content: space-around
+      .suffice
+        margin-right: 20px
+      .fat
+        font-weight: bold
+    #searchIcon
+      align-self: flex-end
+      margin-left : auto
+      margin-bottom: auto
+      &:hover
+        cursor: pointer
+  .contentNav
+    @searchBarLayout
+    display: flex
+    flex-direction: column
+    overflow: hidden
+    a
+      line-height: 2em
+
+
+  .heightAuto
+    height: auto
+  .height0
+    height: 0
+
+  .receptCard
+    display: flex
+    flex-direction: column
+    box-shadow: 0px 0px 10px $hoverColor
+    background-position: center
+    background-size: cover
+    padding: $cardBorderPadding
+    h2
+      word-wrap: break-word
+      margin: 10px
+      a
+        color: $titleTextColor
+        &:hover
+          color: $hoverColor
+
+    .receptInfoCard
+      margin: 0 10px
+      .receptInfo
+        padding: 10px
+        p
+          text-align: center
+        h4
+          line-height: 2em
+    .cuttingBoard
+      align-self: flex-end
+      margin-top: auto
+      img
+        width: 100%
+        height: auto
+
+  .info
+    background: $backgroundColor
+    min-height: 50vh
+    margin: 25px 0px
+    padding: 5vw
