@@ -7,10 +7,10 @@ permalink: pretty
 
 # collections
 collections:
-  recepten:
+  news:
     output: true
 
 tipue_search:
   include:
     pages: true
-    collections: [recepten]
+    collections: [news]

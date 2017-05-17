@@ -1,6 +1,6 @@
 // set equal heights to all recepes
 $(function() {
-    $('.receptCard').matchHeight();
+    $('.newsItemCard').matchHeight();
 });
 
 // toggle class of searchIcon
