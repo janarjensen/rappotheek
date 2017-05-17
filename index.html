@@ -1,0 +1,102 @@
+---
+layout: default
+title: recepten
+---
+<section id="homeSection">
+	<div class="container">
+		<div class="titleElement" style="background-image: url({{site.baseurl}}/img/backgrounds/MizziInDeKeuken.jpg)">
+			<div class="titleTextPusher"></div>
+			<div class="titleText">
+				{% include logos/kokenMetMizzi.svg %}
+			</div>
+		</div>
+		<div class="receptenInfo">
+			<div id="receptSuffice">
+				<p onclick="" class="suffice">prep-time <i class="fa fa-hourglass-start" aria-hidden="true"></i></p>
+				<p onclick="" class="suffice">cook-time <i class="fa fa-hourglass-end" aria-hidden="true"></i></p>
+				<p onclick="" class="suffice">ontbijt <i class="fa fa-coffee" aria-hidden="true"></i></p>
+				<p onclick="" class="suffice">tussendoortje <i class="fa fa-battery-quarter" aria-hidden="true"></i></p>
+				<p onclick="" class="suffice">lunch <i class="fa fa-circle-o" aria-hidden="true"></i></p>
+				<p onclick="" class="suffice">diner <i class="fa fa-cutlery" aria-hidden="true"></i></p>
+				<p onclick="" class="suffice">side-dish <i class="fa fa-plus" aria-hidden="true"></i></p>
+				<p onclick="" class="suffice">toetje <i class="fa fa-birthday-cake" aria-hidden="true"></i></p>
+				<p onclick="" class="suffice">left-overs <i class="fa fa-recycle" aria-hidden="true"></i></p>
+			</div>
+			<p id="searchIcon" onclick=""><i class="fa fa-search" aria-hidden="true"></i></p>
+		</div>
+		<div class="contentNav height0">
+			{% include general/searchForm.html %}
+			{% for recept in site.recepten %}
+				<a href="{{site.baseurl}}{{recept.url}}">{{ recept.title }}
+					{% if recept.ontbijt %}
+	        <i class="fa fa-coffee" aria-hidden="true"></i>
+	        {% endif %}
+	        {% if recept.tussendoortje %}
+	        <i class="fa fa-battery-quarter" aria-hidden="true"></i>
+	        {% endif %}
+	        {% if recept.lunch %}
+	        <i class="fa fa-circle-o" aria-hidden="true"></i>
+	        {% endif %}
+	        {% if recept.diner %}
+	        <i class="fa fa-cutlery" aria-hidden="true"></i>
+	        {% endif %}
+	        {% if recept.sideDish %}
+	        <i class="fa fa-plus" aria-hidden="true"></i>
+	        {% endif %}
+	        {% if recept.toetje %}
+	        <i class="fa fa-birthday-cake" aria-hidden="true"></i>
+	        {% endif %}
+	        {% if recept.leftOvers %}
+	        <i class="fa fa-recycle" aria-hidden="true"></i>
+	        {% endif %}
+				</a>
+			{% endfor %}
+		</div>
+		<div class="row">
+			{% for recept in site.recepten %}
+				<div  class="col-lg-3 col-sm-6">
+					<div class="gridSpace receptCard" onclick="location.href='{{site.baseurl}}{{recept.url}}';" style="cursor: pointer;">
+						<h2><a href="{{site.baseurl}}{{recept.url}}">{{ recept.title }}</a></h2>
+						<div onclick="" class="receptInfoCard">
+							<div class="receptInfo">
+								<strong><p>{{ recept.intro }}</p></strong>
+								<h4><i class="fa fa-hourglass-start" aria-hidden="true"></i>  {{ recept.prepTime }}  min
+									<i class="fa fa-hourglass-end" aria-hidden="true"></i>  {{ recept.cookTime }}  min
+									<br>
+									{% if recept.ontbijt %}
+					        <i class="fa fa-coffee" aria-hidden="true"></i>
+					        {% endif %}
+					        {% if recept.tussendoortje %}
+					        <i class="fa fa-battery-quarter" aria-hidden="true"></i>
+					        {% endif %}
+					        {% if recept.lunch %}
+					        <i class="fa fa-circle-o" aria-hidden="true"></i>
+					        {% endif %}
+					        {% if recept.diner %}
+					        <i class="fa fa-cutlery" aria-hidden="true"></i>
+					        {% endif %}
+					        {% if recept.sideDish %}
+					        <i class="fa fa-plus" aria-hidden="true"></i>
+					        {% endif %}
+					        {% if recept.toetje %}
+					        <i class="fa fa-birthday-cake" aria-hidden="true"></i>
+					        {% endif %}
+					        {% if recept.leftOvers %}
+					        <i class="fa fa-recycle" aria-hidden="true"></i>
+					        {% endif %}
+								</h4>
+							</div>
+						</div>
+						<div class="cuttingBoard">
+							<img src="{{site.baseurl}}/img/cuttingBoards/{{recept.cuttingBoard}}" alt="">
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+		<div class="info">
+			{% include pages/home/mizziInfo.html  %}
+			{% include pages/home/contact.html  %}
+		</div>
+	</div>
+</section>

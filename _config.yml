@@ -1,0 +1,16 @@
+# site settings
+title: Koken met Mizzi
+email: info@info.nl
+description: Hot poppin' snoopie snoopie / Sweet and spicy gettin' Feisty
+baseurl: ""
+permalink: pretty
+
+# collections
+collections:
+  recepten:
+    output: true
+
+tipue_search:
+  include:
+    pages: true
+    collections: [recepten]
