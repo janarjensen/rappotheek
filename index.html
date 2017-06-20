@@ -1,23 +1,23 @@
 ---
 <!-- layout: default -->
 ---
-<section id="homeSection">
+<!-- <section id="homeSection">
 	<div class="container">
-		<!-- <div class="titleElement" style="background-image: url({{site.baseurl}}/img/backgrounds/tempPils.jpg)"> -->
+		<div class="titleElement" style="background-image: url({{site.baseurl}}/img/backgrounds/tempPils.jpg)">
 			<div class="titleTextPusher"></div>
 			<div class="titleText">
-				<!-- {% include logos/logoPlain.svg %} -->
+				{% include logos/logoPlain.svg %}
 			</div>
 		</div>
 		<div class="newsInfo">
 			<p id="searchIcon" onclick=""><i class="fa fa-search" aria-hidden="true"></i></p>
 		</div>
 		<div class="contentNav height0">
-			<!-- {% include general/searchForm.html %} -->
+			{% include general/searchForm.html %}
 		</div>
-			<!-- {% include pages/home/introductie.html  %} -->
+			{% include pages/home/introductie.html  %}
 		<div class="row">
-			<!-- {% for newsItem in site.news %}
+			{% for newsItem in site.news %}
 				<div  class="col-lg-3 col-sm-6">
 					<div class="gridSpace newsItemCard" onclick="location.href='{{site.baseurl}}{{newsItem.url}}';" style="cursor: pointer;">
 						<h2><a href="{{site.baseurl}}{{newsItem.url}}">{{ newsItem.title }}</a></h2>
@@ -28,11 +28,11 @@
 						</div>
 					</div>
 				</div>
-			{% endfor %} -->
+			{% endfor %}
 		</div>
 		<div class="info">
-			<!-- {% include pages/home/overRappotheek.html %} -->
-			<!-- {% include pages/home/contact.html %} -->
+			{% include pages/home/overRappotheek.html %}
+			{% include pages/home/contact.html %}
 		</div>
 	</div>
-</section>
+</section> -->
