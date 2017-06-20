@@ -1,6 +1,6 @@
 ---
 layout: newsItem
-title: de robot staat centraal
+title: Snel Geholpen
 intro: Bacon ipsum dolor amet fatback drumstick spare ribs pastrami
 imageName: tempRobot.png
 dateAdded: 05 mei 2017

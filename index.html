@@ -4,7 +4,7 @@ title: news
 ---
 <section id="homeSection">
 	<div class="container">
-		<div class="titleElement" style="background-image: url({{site.baseurl}}/img/backgrounds/tempHeader.jpg)">
+		<div class="titleElement" style="background-image: url({{site.baseurl}}/img/backgrounds/tempPils.jpg)">
 			<div class="titleTextPusher"></div>
 			<div class="titleText">
 				{% include logos/logoPlain.svg %}
@@ -13,6 +13,9 @@ title: news
 		<div class="newsInfo">
 			<p id="searchIcon" onclick=""><i class="fa fa-search" aria-hidden="true"></i></p>
 		</div>
+
+		{% include pages/home/introduction.html  %}	
+
 		<div class="contentNav height0">
 			{% include general/searchForm.html %}
 		</div>
