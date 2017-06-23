@@ -1,8 +1,8 @@
 ---
 layout: newsItem
-title: Snel Geholpen
+title: Eerste Rappotheek opent in Duckstad
 intro: Bacon ipsum dolor amet fatback drumstick spare ribs pastrami
-imageName: tempRobot.png
+imageName: duckstad.jpg
 dateAdded: 05 mei 2017
 ---
 

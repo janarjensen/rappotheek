@@ -1,8 +1,8 @@
 ---
 layout: newsItem
-title: de robot staat centraal
+title: Rappotheek bespaard jaarlijks €400,- per gebruiker
 intro: Bacon ipsum dolor amet fatback drumstick spare ribs pastrami
-imageName: tempRobot.png
+imageName: euro.jpg
 dateAdded: 05 mei 2017
 ---
 
