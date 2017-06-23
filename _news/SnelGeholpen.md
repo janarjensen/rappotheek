@@ -1,5 +1,5 @@
 ---
-layout: recept
+layout: newsItem
 title: Snel Geholpen
 intro: Bacon ipsum dolor amet fatback drumstick spare ribs pastrami
 imageName: tempRobot.png

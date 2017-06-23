@@ -1,5 +1,5 @@
 ---
-layout: recept
+layout: newsItem
 title: de robot staat centraal
 intro: Bacon ipsum dolor amet fatback drumstick spare ribs pastrami
 imageName: tempRobot.png
