@@ -16,6 +16,7 @@ title: recepten
 		<div class="contentNav height0">
 			{% include general/searchForm.html %}
 		</div>
+		{% include pages/home/introductie.html %}
 		<div class="row">
 			{% for recept in site.recepten %}
 				<div  class="col-lg-3 col-sm-6">
@@ -24,31 +25,6 @@ title: recepten
 						<div onclick="" class="receptInfoCard">
 							<div class="receptInfo">
 								<strong><p>{{ recept.intro }}</p></strong>
-								<h4><i class="fa fa-hourglass-start" aria-hidden="true"></i>  {{ recept.prepTime }}  min
-									<i class="fa fa-hourglass-end" aria-hidden="true"></i>  {{ recept.cookTime }}  min
-									<br>
-									{% if recept.ontbijt %}
-					        <i class="fa fa-coffee" aria-hidden="true"></i>
-					        {% endif %}
-					        {% if recept.tussendoortje %}
-					        <i class="fa fa-battery-quarter" aria-hidden="true"></i>
-					        {% endif %}
-					        {% if recept.lunch %}
-					        <i class="fa fa-circle-o" aria-hidden="true"></i>
-					        {% endif %}
-					        {% if recept.diner %}
-					        <i class="fa fa-cutlery" aria-hidden="true"></i>
-					        {% endif %}
-					        {% if recept.sideDish %}
-					        <i class="fa fa-plus" aria-hidden="true"></i>
-					        {% endif %}
-					        {% if recept.toetje %}
-					        <i class="fa fa-birthday-cake" aria-hidden="true"></i>
-					        {% endif %}
-					        {% if recept.leftOvers %}
-					        <i class="fa fa-recycle" aria-hidden="true"></i>
-					        {% endif %}
-								</h4>
 							</div>
 						</div>
 						<div class="cuttingBoard">
