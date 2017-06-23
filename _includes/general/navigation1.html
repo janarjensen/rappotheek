@@ -1,6 +1,6 @@
 <nav id="nav1">
   <a href="{{ site.baseurl }}/index"><i class="fa fa-undo" aria-hidden="true"></i> Home</a>
-  {% for recept in site.recepten %}
+  {% for recept in site.news %}
     <a href="{{site.baseurl}}{{recept.url}}">{{ recept.title }}</a>
   {% endfor %}
 </nav>
