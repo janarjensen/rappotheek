@@ -2,18 +2,9 @@
 layout: recept
 title: Avocadeau in één minuutje
 imageName: avocadeau.jpg
-cuttingBoard: avocadeau.png
 dateAdded: 15 April 2017
 intro: HABA HABA lekker en super snel
-prepTime: 1
-cookTime: 0
-ontbijt: true
-tussendoortje: true
-lunch: false
-diner: false
-sideDish: true
-toetje: false
-leftOvers: false
+
 ---
 
 Dit cadeautje is altijd goed. Het is namelijk HABA HABA lekker en super snel. In één minuut heb je een heerlijk ontbijtje, tussendoortje of side dish.
