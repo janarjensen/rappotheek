@@ -28,7 +28,7 @@ var tipuesearch_replace = {'words': [
 // Weighting
 
 var tipuesearch_weight = {'weight': [
-     {'url': '{{ baseurl }}/news', 'score': 30},
+     {'url': '{{ baseurl }}/recepten', 'score': 30},
      {'url': '{{ baseurl }}', 'score': 20},
 ]};
 

@@ -1,16 +1,16 @@
 # site settings
 title: Rappotheek
 email: info@info.nl
-description: 
+description: Appotheek van de toekomst
 baseurl: ""
 permalink: pretty
 
 # collections
 collections:
-  news:
+  recepten:
     output: true
 
 tipue_search:
   include:
     pages: true
-    collections: [news]
+    collections: [recepten]

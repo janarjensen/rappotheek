@@ -1,0 +1,55 @@
+---
+layout: default
+---
+<section id="receptSection">
+  <div class="container">
+    <div style="background-image: url({{site.baseurl}}/img/recepten/{{page.imageName}})" class="pageTitleElement">
+      <h1>{{page.title}}</h1>
+    </div>
+    <div class="contentTitleInfo">
+      <a id="backToPrevious" href="{{ site.baseurl }}/index"><i class="fa fa-undo" aria-hidden="true"></i> Mizzi</a>
+      <p id="date">{{page.dateAdded}}</p>
+    </div>
+    <div class="contentContent">
+      <label><h5>kies aantal personen... (<span class="personen">2</span>)</h5>
+        <div class="inputBar">
+          <span>1</span>
+          <input type="range" value="2" min="1" max="12">
+          <span>12</span>
+        </div>
+      </label>
+      <div class="cookInfo">
+        <h5><i class="fa fa-hourglass-start" aria-hidden="true"></i>  {{ page.prepTime }}  min prep-time</h5>
+        <h5><i class="fa fa-hourglass-end" aria-hidden="true"></i>  {{ page.cookTime }}  min cook-time</h5>
+        <h5>
+          {% if page.ontbijt %}
+          <i class="fa fa-coffee" aria-hidden="true"></i>
+          {% endif %}
+          {% if page.tussendoortje %}
+          <i class="fa fa-battery-quarter" aria-hidden="true"></i>
+          {% endif %}
+          {% if page.lunch %}
+          <i class="fa fa-circle-o" aria-hidden="true"></i>
+          {% endif %}
+          {% if page.diner %}
+          <i class="fa fa-cutlery" aria-hidden="true"></i>
+          {% endif %}
+          {% if page.sideDish %}
+          <i class="fa fa-plus" aria-hidden="true"></i>
+          {% endif %}
+          {% if page.toetje %}
+          <i class="fa fa-birthday-cake" aria-hidden="true"></i>
+          {% endif %}
+          {% if page.leftOvers %}
+          <i class="fa fa-recycle" aria-hidden="true"></i>
+          {% endif %}</h5>
+      </div>
+        <br>
+      <p><strong>{{ page.intro }}</strong></p>
+      {{ content }}
+    </div>
+  </div>
+</section>
+
+<!-- Js pullins at bottom of body -->
+{% include general/jsPullinsRecept.html %}
