@@ -15,31 +15,6 @@ title: recepten
 		</div>
 		<div class="contentNav height0">
 			{% include general/searchForm.html %}
-			{% for recept in site.recepten %}
-				<a href="{{site.baseurl}}{{recept.url}}">{{ recept.title }}
-					{% if recept.ontbijt %}
-	        <i class="fa fa-coffee" aria-hidden="true"></i>
-	        {% endif %}
-	        {% if recept.tussendoortje %}
-	        <i class="fa fa-battery-quarter" aria-hidden="true"></i>
-	        {% endif %}
-	        {% if recept.lunch %}
-	        <i class="fa fa-circle-o" aria-hidden="true"></i>
-	        {% endif %}
-	        {% if recept.diner %}
-	        <i class="fa fa-cutlery" aria-hidden="true"></i>
-	        {% endif %}
-	        {% if recept.sideDish %}
-	        <i class="fa fa-plus" aria-hidden="true"></i>
-	        {% endif %}
-	        {% if recept.toetje %}
-	        <i class="fa fa-birthday-cake" aria-hidden="true"></i>
-	        {% endif %}
-	        {% if recept.leftOvers %}
-	        <i class="fa fa-recycle" aria-hidden="true"></i>
-	        {% endif %}
-				</a>
-			{% endfor %}
 		</div>
 		<div class="row">
 			{% for recept in site.recepten %}
@@ -77,7 +52,7 @@ title: recepten
 							</div>
 						</div>
 						<div class="cuttingBoard">
-							<img src="{{site.baseurl}}/img/cuttingBoards/{{recept.cuttingBoard}}" alt="">
+							<img src="{{site.baseurl}}/img/cuttingBoards/{{recept.imageName}}" alt="">
 						</div>
 					</div>
 				</div>
