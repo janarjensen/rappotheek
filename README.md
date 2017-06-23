@@ -1,2 +1,2 @@
-# mizzi
-koken met Mizzi
+# Rapotheek
+Apotheek van de toekomst
