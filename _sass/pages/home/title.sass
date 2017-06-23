@@ -1,0 +1,45 @@
+#title
+  .titleElement
+    background-position: center
+    background-size: cover
+    height: 50vh
+    display: flex
+    flex-direction: column
+    padding: 3vh 3vw
+
+    .titleText
+      height: 12vh
+      min-height: 100px
+      width: 100%
+      align-self: center
+      margin-top: auto
+
+    svg
+      padding: 10px
+      -webkit-filter: drop-shadow(2px 2px 2px $titleTextColor) drop-shadow( 2px -2px 2px $glowColor) drop-shadow(-2px 2px 2px $glowColor) drop-shadow(0px 0px 12px $glowColor)
+      filter: drop-shadow(2px 2px 2px $glowColor) drop-shadow( 2px -2px 2px $glowColor) drop-shadow(-2px 2px 2px $glowColor) drop-shadow(0px 0px 12px $glowColor)
+      fill: $backgroundColor
+
+  .newsInfo
+    margin-top: 10px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    width: 100%
+    #searchIcon
+      align-self: flex-end
+      margin-left : auto
+      margin-bottom: auto
+      &:hover
+        cursor: pointer
+  .contentNav
+    @searchBarLayout
+    display: flex
+    flex-direction: column
+    overflow: hidden
+    a
+      line-height: 2em
+  .heightAuto
+    height: auto
+  .height0
+    height: 0

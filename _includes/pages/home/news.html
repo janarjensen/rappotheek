@@ -1,0 +1,19 @@
+<section id="news">
+  <div class="row">
+    {% for recept in site.news %}
+      <div  class="col-lg-3 col-sm-6">
+        <div class="gridSpace receptCard" onclick="location.href='{{site.baseurl}}{{recept.url}}';" style="cursor: pointer;">
+          <h2><a href="{{site.baseurl}}{{recept.url}}">{{ recept.title }}</a></h2>
+          <div onclick="" class="receptInfoCard">
+            <div class="receptInfo">
+              <strong><p>{{ recept.intro }}</p></strong>
+            </div>
+          </div>
+          <div class="cuttingBoard">
+            <img src="{{site.baseurl}}/img/news/{{recept.imageName}}" alt="">
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
