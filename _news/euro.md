@@ -1,6 +1,6 @@
 ---
 layout: newsItem
-title: Rappotheek bespaard jaarlijks €400,- per gebruiker
+title: Rappotheek bespaart jaarlijks €400,- per gebruiker
 intro: Bacon ipsum dolor amet fatback drumstick spare ribs pastrami
 imageName: euro.jpg
 dateAdded: 05 mei 2017
